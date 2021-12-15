@@ -166,6 +166,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LEI-MI-Hg2"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="1Dy-t6-tNZ" id="NFL-Ym-34A"/>
+                        <outlet property="firstNameTextField" destination="AfD-zg-g3u" id="QrQ-3m-1ai"/>
+                        <outlet property="lastNameTextField" destination="u7M-oa-Huo" id="zif-zs-qnH"/>
+                        <outlet property="loginButton" destination="Izs-yr-d7t" id="CoC-X6-mPa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0t-Qn-Sdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
