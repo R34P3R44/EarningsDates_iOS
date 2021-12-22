@@ -17,6 +17,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setUpElements()
+    }
+    
+    func setUpElements() {
+        
+        //Style of elements
+        Utilities.styleFilledButton(signUpButton)
+        Utilities.styleHollowButton(loginButton)
     }
 
 

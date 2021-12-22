@@ -22,24 +22,13 @@ class LoginViewController: UIViewController {
     
     func setUpElements() {
         
-        error.Label.alpha = 0
+        errorLabel.alpha = 0
         
         //Style of elements
         Utilities.styleTextField(firstNameTextField)
         Utilities.styleTextField(lastNameTextField)
         Utilities.styleFilledButton(loginButton)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     @IBAction func loginTapped(_ sender: Any) {
     }
