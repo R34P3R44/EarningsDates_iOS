@@ -85,7 +85,7 @@
                                             <action selector="signUpTapped:" destination="dN6-ma-npw" eventType="touchUpInside" id="TTW-fD-pIq"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZ7-BC-in0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZ7-BC-in0">
                                         <rect key="frame" x="0.0" y="350" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
@@ -125,26 +125,37 @@
         <!--HomeViewController-->
         <scene sceneID="p2b-OT-s7s">
             <objects>
-                <viewController id="FhL-oD-wVc" userLabel="HomeViewController" customClass="ViewController" customModule="EarningsDates" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="FhL-oD-wVc" userLabel="HomeViewController" customClass="HomeViewController" customModule="EarningsDates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YIq-xu-MuE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POd-1c-cXm">
-                                <rect key="frame" x="132.5" y="429" width="149.5" height="38.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <rect key="frame" x="103" y="407" width="208.5" height="82"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="51"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZi-3I-k2g">
-                                <rect key="frame" x="158" y="596" width="99" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuH-r8-MoN">
+                                <rect key="frame" x="297" y="44" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Home Page"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Log Out">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AT8-Lc-xgO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.24626764707856699" green="0.55021547312296903" blue="0.72723077172965067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="POd-1c-cXm" firstAttribute="centerX" secondItem="YIq-xu-MuE" secondAttribute="centerX" id="oSJ-VL-06f"/>
                             <constraint firstItem="POd-1c-cXm" firstAttribute="centerY" secondItem="YIq-xu-MuE" secondAttribute="centerY" id="tMQ-4F-VlL"/>
@@ -153,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pm-eN-0AE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="84"/>
+            <point key="canvasLocation" x="1934.7826086956522" y="83.705357142857139"/>
         </scene>
         <!--LoginViewController-->
         <scene sceneID="wUq-1X-iwG">
@@ -209,7 +220,7 @@
                                             <action selector="loginTapped:" destination="xOI-2U-Xvt" eventType="touchUpInside" id="WCl-eT-r6y"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dy-t6-tNZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dy-t6-tNZ">
                                         <rect key="frame" x="0.0" y="210" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
@@ -232,10 +243,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="LEI-MI-Hg2"/>
                     <connections>
+                        <outlet property="emailTextField" destination="AfD-zg-g3u" id="YKB-sN-ajK"/>
                         <outlet property="errorLabel" destination="1Dy-t6-tNZ" id="NFL-Ym-34A"/>
-                        <outlet property="firstNameTextField" destination="AfD-zg-g3u" id="QrQ-3m-1ai"/>
-                        <outlet property="lastNameTextField" destination="u7M-oa-Huo" id="zif-zs-qnH"/>
                         <outlet property="loginButton" destination="Izs-yr-d7t" id="CoC-X6-mPa"/>
+                        <outlet property="passwordTextField" destination="u7M-oa-Huo" id="pHt-yB-LJk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0t-Qn-Sdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -335,8 +346,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

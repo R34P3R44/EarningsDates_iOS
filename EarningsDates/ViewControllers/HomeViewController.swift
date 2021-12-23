@@ -6,7 +6,11 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class HomeViewController: NSObject {
-
+class HomeViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

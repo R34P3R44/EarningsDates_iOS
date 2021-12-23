@@ -6,7 +6,9 @@ target 'EarningsDates' do
   use_frameworks!
 
   # Pods for EarningsDates
+    pod 'Firebase/Analytics'
     pod 'Firebase/Auth'
     pod 'Firebase/Firestore'
-
+    pod 'Firebase/Core'
+    
 end
