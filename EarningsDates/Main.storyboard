@@ -19,10 +19,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5th-sF-rxK">
                                 <rect key="frame" x="40" y="84" width="334" height="370.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kd2-U2-16Y">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kd2-U2-16Y">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <attributedString key="attributedText"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -30,10 +30,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8E5-GZ-czP">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8E5-GZ-czP">
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <attributedString key="attributedText"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -41,10 +41,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JXa-PM-4bC">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JXa-PM-4bC">
                                         <rect key="frame" x="0.0" y="140" width="334" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <attributedString key="attributedText"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -52,10 +52,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="akO-mm-9xD">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="akO-mm-9xD">
                                         <rect key="frame" x="0.0" y="210" width="334" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <attributedString key="attributedText"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -67,7 +67,6 @@
                                         <rect key="frame" x="0.0" y="280" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="O9f-hu-SEe"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="gJ1-QT-hr5"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
@@ -95,6 +94,7 @@
                                 <constraints>
                                     <constraint firstItem="akO-mm-9xD" firstAttribute="height" secondItem="Kd2-U2-16Y" secondAttribute="height" id="7X4-0V-o7V"/>
                                     <constraint firstItem="JXa-PM-4bC" firstAttribute="height" secondItem="Kd2-U2-16Y" secondAttribute="height" id="MR8-Ps-9Fd"/>
+                                    <constraint firstAttribute="height" constant="418" id="WYg-KK-Zwa"/>
                                     <constraint firstItem="8E5-GZ-czP" firstAttribute="height" secondItem="Kd2-U2-16Y" secondAttribute="height" id="aOW-uV-mbS"/>
                                     <constraint firstItem="CdF-kX-7nG" firstAttribute="height" secondItem="Kd2-U2-16Y" secondAttribute="height" id="pdw-sg-otC"/>
                                 </constraints>
@@ -103,9 +103,10 @@
                         <viewLayoutGuide key="safeArea" id="tha-VI-FJZ"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="tha-VI-FJZ" firstAttribute="bottom" secondItem="5th-sF-rxK" secondAttribute="bottom" constant="200" id="2S8-yD-WXG"/>
                             <constraint firstItem="5th-sF-rxK" firstAttribute="leading" secondItem="tha-VI-FJZ" secondAttribute="leading" constant="40" id="3Ve-aM-0FU"/>
-                            <constraint firstItem="5th-sF-rxK" firstAttribute="top" secondItem="tha-VI-FJZ" secondAttribute="top" constant="40" id="41m-Gi-Kaa"/>
                             <constraint firstItem="tha-VI-FJZ" firstAttribute="trailing" secondItem="5th-sF-rxK" secondAttribute="trailing" constant="40" id="Aw9-08-0Zc"/>
+                            <constraint firstItem="5th-sF-rxK" firstAttribute="top" secondItem="tha-VI-FJZ" secondAttribute="top" constant="40" id="qvH-ge-KXh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cu3-go-Td4"/>
@@ -133,19 +134,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POd-1c-cXm">
                                 <rect key="frame" x="103" y="407" width="208.5" height="82"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="51"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="2" height="-1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuH-r8-MoN">
-                                <rect key="frame" x="297" y="44" width="97" height="31"/>
+                                <rect key="frame" x="20" y="55" width="87" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule" titleAlignment="automatic">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Log Out">
+                                        <fragment content="Profile">
                                             <attributes>
                                                 <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -153,6 +154,11 @@
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="gear.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SAE-b2-abP">
+                                <rect key="frame" x="354" y="47.5" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AT8-Lc-xgO"/>
                         <color key="backgroundColor" red="0.24626764707856699" green="0.55021547312296903" blue="0.72723077172965067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -175,12 +181,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5zh-Eg-Ghi">
-                                <rect key="frame" x="40" y="84" width="334" height="230.5"/>
+                                <rect key="frame" x="40" y="179" width="334" height="230.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AfD-zg-g3u">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AfD-zg-g3u">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <attributedString key="attributedText"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -188,10 +194,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="u7M-oa-Huo">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="u7M-oa-Huo">
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <attributedString key="attributedText"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -229,7 +235,10 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Izs-yr-d7t" firstAttribute="height" secondItem="AfD-zg-g3u" secondAttribute="height" id="E6A-eI-lh8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="370.5" id="Ywx-8F-xXY"/>
                                     <constraint firstItem="u7M-oa-Huo" firstAttribute="height" secondItem="AfD-zg-g3u" secondAttribute="height" id="fFp-HU-pSD"/>
+                                    <constraint firstAttribute="height" constant="318" id="fQ5-W2-0aY"/>
+                                    <constraint firstAttribute="width" constant="334" id="q58-3X-6Rk"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -237,8 +246,9 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5zh-Eg-Ghi" firstAttribute="leading" secondItem="Dds-7G-FbT" secondAttribute="leading" constant="40" id="7a7-jn-94s"/>
-                            <constraint firstItem="5zh-Eg-Ghi" firstAttribute="top" secondItem="Dds-7G-FbT" secondAttribute="top" constant="40" id="h5Q-Cd-4ik"/>
                             <constraint firstItem="Dds-7G-FbT" firstAttribute="trailing" secondItem="5zh-Eg-Ghi" secondAttribute="trailing" constant="40" id="jpM-Ve-4Mb"/>
+                            <constraint firstItem="5zh-Eg-Ghi" firstAttribute="top" secondItem="Dds-7G-FbT" secondAttribute="top" constant="135" id="kEI-W1-sgY"/>
+                            <constraint firstItem="Dds-7G-FbT" firstAttribute="bottom" secondItem="5zh-Eg-Ghi" secondAttribute="bottom" constant="200" id="lvX-iw-Rfn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LEI-MI-Hg2"/>
@@ -346,6 +356,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gear.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
