@@ -153,10 +153,6 @@
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ylh-i1-fMx">
-                                <rect key="frame" x="183" y="305" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AT8-Lc-xgO"/>
                         <color key="backgroundColor" red="0.24626764707856699" green="0.55021547312296903" blue="0.72723077172965067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
