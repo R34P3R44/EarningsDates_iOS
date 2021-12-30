@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if Utilities.isPasswordValid(cleanedPassword) == false {
-            return "Please make sure your password is at least 8 characters, contains a special character and a number. "
+            return "Password is at least 8 characters, with a special character and a number. "
         }
         
         return nil
@@ -53,7 +53,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginTapped(_ sender: Any) {
         
-        //TODO: Validate textfields
+        //Validate textfields
         //check if there is an error
         //if there is then dont run the below code
         
