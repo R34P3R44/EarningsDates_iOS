@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CDE3AB82790DBCA00353839 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CDE3AB72790DBCA00353839 /* GoogleService-Info.plist */; };
 		6FF31DF3F2CC10F5B57F50AC /* Pods_EarningsDates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A2E4A86B0E48E352276415 /* Pods_EarningsDates.framework */; };
 		BE479BBF2763C99300B62310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE479BBE2763C99300B62310 /* AppDelegate.swift */; };
 		BE479BC12763C99300B62310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE479BC02763C99300B62310 /* SceneDelegate.swift */; };
@@ -16,7 +17,6 @@
 		BE479BD32763CAB600B62310 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE479BD22763CAB600B62310 /* SignUpViewController.swift */; };
 		BE479BD52763CAD200B62310 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE479BD42763CAD200B62310 /* LoginViewController.swift */; };
 		BE479BD72763CAEE00B62310 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE479BD62763CAEE00B62310 /* HomeViewController.swift */; };
-		BE8C642F2773F1C400D7DFDD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE8C642E2773F1C400D7DFDD /* GoogleService-Info.plist */; };
 		BE9A405F2772B9FB00EB184F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A405D2772B9FB00EB184F /* Utilities.swift */; };
 		BEAFD4B22774C281008FE1D4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAFD4B12774C281008FE1D4 /* Constants.swift */; };
 		BEF2561527756B2100478AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF2561427756B2100478AC5 /* Main.storyboard */; };
@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		058C9C0B159DB7DE18B38609 /* Pods-EarningsDates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarningsDates.debug.xcconfig"; path = "Target Support Files/Pods-EarningsDates/Pods-EarningsDates.debug.xcconfig"; sourceTree = "<group>"; };
 		38A2E4A86B0E48E352276415 /* Pods_EarningsDates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarningsDates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CDE3AB72790DBCA00353839 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE479BBB2763C99300B62310 /* EarningsDates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarningsDates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE479BBE2763C99300B62310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE479BC02763C99300B62310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		BE479BD22763CAB600B62310 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BE479BD42763CAD200B62310 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BE479BD62763CAEE00B62310 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		BE8C642E2773F1C400D7DFDD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE9A405D2772B9FB00EB184F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		BEAFD4B12774C281008FE1D4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BEF2561427756B2100478AC5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 				BE479BC72763C99400B62310 /* Assets.xcassets */,
 				BEF2561427756B2100478AC5 /* Main.storyboard */,
 				BE479BCC2763C99400B62310 /* Info.plist */,
-				BE8C642E2773F1C400D7DFDD /* GoogleService-Info.plist */,
 				BE479BC92763C99400B62310 /* LaunchScreen.storyboard */,
+				4CDE3AB72790DBCA00353839 /* GoogleService-Info.plist */,
 			);
 			path = EarningsDates;
 			sourceTree = "<group>";
@@ -185,8 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE8C642F2773F1C400D7DFDD /* GoogleService-Info.plist in Resources */,
 				BE479BCB2763C99400B62310 /* LaunchScreen.storyboard in Resources */,
+				4CDE3AB82790DBCA00353839 /* GoogleService-Info.plist in Resources */,
 				BE479BC82763C99400B62310 /* Assets.xcassets in Resources */,
 				BEF2561527756B2100478AC5 /* Main.storyboard in Resources */,
 			);

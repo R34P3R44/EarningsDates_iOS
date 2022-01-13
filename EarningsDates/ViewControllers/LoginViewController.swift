@@ -101,5 +101,3 @@ class LoginViewController: UIViewController {
         view.window?.makeKeyAndVisible()
     }
 }
-
-//maldini.paolo@test.com
