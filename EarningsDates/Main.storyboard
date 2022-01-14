@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="dN6-ma-npw" userLabel="SignUpViewController" customClass="SignupViewController" customModule="EarningsDates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rAE-Ub-p2g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5th-sF-rxK">
-                                <rect key="frame" x="40" y="40" width="334" height="568"/>
+                                <rect key="frame" x="40" y="84" width="334" height="578"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kd2-U2-16Y">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -98,7 +98,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZ7-BC-in0">
-                                        <rect key="frame" x="0.0" y="300" width="334" height="268"/>
+                                        <rect key="frame" x="0.0" y="300" width="334" height="278"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Error">
                                                 <attributes>
@@ -185,9 +185,22 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signOutTapped:" destination="FhL-oD-wVc" eventType="touchUpInside" id="UGx-jv-bVg"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="QfQ-Rb-0b3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKs-qo-9q0">
+                                <rect key="frame" x="40" y="89" width="334" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Error">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemRedColor"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AT8-Lc-xgO"/>
                         <color key="backgroundColor" red="0.24626764707856699" green="0.55021547312296903" blue="0.72723077172965067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -197,6 +210,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="errorLabel" destination="WKs-qo-9q0" id="BP0-jO-I0i"/>
                         <outlet property="signOutButton" destination="aJm-Ek-x6N" id="57q-Pf-Rmf"/>
                     </connections>
                 </viewController>
@@ -209,11 +223,11 @@
             <objects>
                 <viewController id="xOI-2U-Xvt" userLabel="LoginViewController" customClass="LoginViewController" customModule="EarningsDates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bP2-s7-kng">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5zh-Eg-Ghi">
-                                <rect key="frame" x="40" y="40" width="334" height="568"/>
+                                <rect key="frame" x="40" y="84" width="334" height="578"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AfD-zg-g3u">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -265,7 +279,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dy-t6-tNZ">
-                                        <rect key="frame" x="0.0" y="210" width="334" height="358"/>
+                                        <rect key="frame" x="0.0" y="210" width="334" height="368"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -297,13 +311,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EarningsDates" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewVC" id="BYZ-38-t0r" customClass="ViewController" customModule="EarningsDates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JaV-G5-M6h">
-                                <rect key="frame" x="40" y="235" width="334" height="200"/>
+                                <rect key="frame" x="40" y="279" width="334" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVu-DT-b93">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -402,9 +416,6 @@
             <point key="canvasLocation" x="-491" y="66"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="QfQ-Rb-0b3"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
