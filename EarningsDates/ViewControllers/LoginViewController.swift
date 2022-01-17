@@ -48,7 +48,6 @@ class LoginViewController: UIViewController {
         
         return nil
     }
-    
 
     
     @IBAction func loginTapped(_ sender: Any) {
@@ -84,7 +83,6 @@ class LoginViewController: UIViewController {
                 }
             }
         }
-        
     }
         
     func showError(_ message:String) {

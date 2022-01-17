@@ -167,13 +167,13 @@
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJm-Ek-x6N">
-                                <rect key="frame" x="303" y="55" width="91" height="26"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJm-Ek-x6N" userLabel="Log Out Button">
+                                <rect key="frame" x="286" y="55" width="91" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule" titleAlignment="automatic">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Sign Out">
+                                        <fragment content="Log Out">
                                             <attributes>
                                                 <font key="NSFont" size="16" name="Helvetica-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -184,23 +184,9 @@
                                     <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="signOutTapped:" destination="FhL-oD-wVc" eventType="touchUpInside" id="UGx-jv-bVg"/>
+                                    <action selector="logOutTapped:" destination="FhL-oD-wVc" eventType="touchUpInside" id="38W-3j-iIv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKs-qo-9q0">
-                                <rect key="frame" x="40" y="89" width="334" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Error">
-                                        <attributes>
-                                            <color key="NSColor" systemColor="systemRedColor"/>
-                                            <font key="NSFont" metaFont="cellTitle"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AT8-Lc-xgO"/>
                         <color key="backgroundColor" red="0.24626764707856699" green="0.55021547312296903" blue="0.72723077172965067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -210,8 +196,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="errorLabel" destination="WKs-qo-9q0" id="BP0-jO-I0i"/>
-                        <outlet property="signOutButton" destination="aJm-Ek-x6N" id="57q-Pf-Rmf"/>
+                        <outlet property="logOutButton" destination="aJm-Ek-x6N" id="aye-kb-Meb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pm-eN-0AE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
